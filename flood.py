@@ -16,7 +16,7 @@ import time
 def kahoot_run(pin, x, name, verify):
   send = kahoot(pin, name+str(x+1))
   send.verify = verify
-  send.connect()
+  send.connect(1562715)
 
 def test_connection(pin):
   send = kahoot(pin, "Test Name")
